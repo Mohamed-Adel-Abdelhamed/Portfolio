@@ -13,44 +13,52 @@
     <!--HEADER SECTION-->
     <section id="header">
         <h2>Portfolio.</h2>
-        <div class="navbar">
-            <ul>
+        <div>
+            <ul id="navbar">
                 <li><a class="active" href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
             </ul>
+        </div>
+        <div id="mobile">
+            <i id="bar" class="fas fa-outdent"></i>
         </div>
     </section>
     <!--HERO SECTION-->
-    <section id="home" class="original section-p1 ">
-        <div class="description">
-            <h3>Hello, it's Me</h4>
-            <h1>Mohamed Adel</h2>
-            <h2>And I'm a <span class="diff-word">Frontend Developer</span></h3>
-            <p>I am a Frontend Designer with over three years of extensive experience in website design and frontend development. My expertise encompasses creating visually appealing and user-friendly interfaces, ensuring a seamless user experience. I am skilled in a variety of design tools and technologies, and I am dedicated to delivering high-quality, responsive designs that meet client needs and enhance functionality.</p>
-            <div class="icons">
-                <a href="https://www.linkedin.com/in/mohamed-adel-063667213/"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://github.com/Mohamed-Adel-Abdelhamed"><i class="fa-brands fa-github"></i></a>
-                <a href="https://www.facebook.com/mohamed.a.messi.94"><i class="fa-brands fa-facebook"></i></a>
+    <section id="home" class="section-p1 ">
+        <div class="original">
+            <div class="description">
+                <h3>Hello, it's Me</h4>
+                <h1>Mohamed Adel</h2>
+                <h2>And I'm a <span class="diff-word">Frontend Developer</span></h3>
+                <p>I am a Frontend Designer with over three years of extensive experience in website design and frontend development. My expertise encompasses creating visually appealing and user-friendly interfaces, ensuring a seamless user experience. I am skilled in a variety of design tools and technologies, and I am dedicated to delivering high-quality, responsive designs that meet client needs and enhance functionality.</p>
+                <div class="icons">
+                    <a href="https://www.linkedin.com/in/mohamed-adel-063667213/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/Mohamed-Adel-Abdelhamed"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.facebook.com/mohamed.a.messi.94"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+                <a href="#about"><button>More About Me</button></a>
             </div>
-            <a href="#about"><button>More About Me</button></a>
-        </div>
-        <div class="picture">
-            <img src="Images/Portfolio.jpg" alt="#">
+            <div class="picture">
+                <img src="Images/Portfolio.jpg" alt="#">
+            </div>
         </div>
     </section>
     <!--ABOUT ME SECTION-->
-    <section id="about" class="original section-p1 ">
-        <div class="picture">
-            <img src="Images/University.jpg" alt="#">
-        </div>
-        <div class="description">
-            <h1>About <span class="diff-word">Me</span></h2>
-            <p>As a graduate in Computer Science and Information Systems from Ain Shams University, Egypt, I have gained a solid foundation in core computer science principles and methodologies. My coursework covered a range of topics, including algorithms, data structures, software engineering, and database management, equipping me with the skills to tackle complex problems effectively. Through hands-on projects and collaborative learning, I developed strong analytical and problem-solving abilities, allowing me to approach challenges with a structured mindset. This comprehensive education has reinforced my passion for technology and prepared me to excel in the field of computer science.</p>
-            <a href="#services"><button>More About Me</button></a>
+    <section id="about" class="section-p1 ">
+        <div class="original">
+            <div class="picture">
+                <img src="Images/University.jpg" alt="#">
+            </div>
+            <div class="description">
+                <h1>About <span class="diff-word">Me</span></h2>
+                <p>As a graduate in Computer Science and Information Systems from Ain Shams University, Egypt, I have gained a solid foundation in core computer science principles and methodologies. My coursework covered a range of topics, including algorithms, data structures, software engineering, and database management, equipping me with the skills to tackle complex problems effectively. Through hands-on projects and collaborative learning, I developed strong analytical and problem-solving abilities, allowing me to approach challenges with a structured mindset. This comprehensive education has reinforced my passion for technology and prepared me to excel in the field of computer science.</p>
+                <a href="#services"><button>More About Me</button></a>
+            </div>
         </div>
     </section>
     <!--MY SERVICES SECTION-->
@@ -172,10 +180,10 @@
     <section id="projects" class="section-p1">
         <h1>Latest <span class="diff-word">Projects</span></h1>
         <div class="services-containter">
-            <div class="service">
+            <div class="service project">
                 <a href="https://ocean-ashen.vercel.app/"><img src="Images/Ocean.PNG" alt="#"></a>
             </div>
-            <div class="service">
+            <div class="service project">
                 <a href="https://cruds-khaki.vercel.app/"><img src="Images/CRUD.PNG" alt="#"></a>
             </div>
             <div class="service project">
@@ -184,43 +192,45 @@
         </div>
     </section>
     <!--CONTACT SECTION-->
-    <section id="contact" class="original section-p1">
-        <div class="info">
-            <h2>Contact <span class="diff-word">Me</span></h2>
-            <h4>Let's work together</h4>
-            <p>Thank you for visiting my portfolio! 
-                I'm excited about the possibility of collaborating on your next project. 
-                If you're looking for web developer, 
-                I'm here to bring your vision to life. 
-                Feel free to reach out with any questions or ideas, you can contact me via email, mobile or through the form. 
-                Let's create something amazing together!
-            </p>
-            <div class="contact-details">
-                <div class="gmail">
-                    <a href="mailto:mohameddula98@gmail.com"><i class="fa-solid fa-envelope"></i></a>
-                    <p>mohameddula98@gmail.com</p>
+    <section id="contact" class="section-p1">
+        <div class="original">
+            <div class="info">
+                <h2>Contact <span class="diff-word">Me</span></h2>
+                <h4>Let's work together</h4>
+                <p>Thank you for visiting my portfolio! 
+                    I'm excited about the possibility of collaborating on your next project. 
+                    If you're looking for web developer, 
+                    I'm here to bring your vision to life. 
+                    Feel free to reach out with any questions or ideas, you can contact me via email, mobile or through the form. 
+                    Let's create something amazing together!
+                </p>
+                <div class="contact-details">
+                    <div class="gmail">
+                        <a href="mailto:mohameddula98@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                        <p>mohameddula98@gmail.com</p>
+                    </div>
+                    <div class="gmail">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>+20 1201728858 - +971 566471347</p>
+                    </div>
                 </div>
-                <div class="gmail">
-                    <i class="fa-solid fa-phone"></i>
-                    <p>+20 1201728858 - +971 566471347</p>
+                <div class="icons">
+                    <a href="https://www.linkedin.com/in/mohamed-adel-063667213/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/Mohamed-Adel-Abdelhamed"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.facebook.com/mohamed.a.messi.94"><i class="fa-brands fa-facebook"></i></a>
                 </div>
+                <a href="Mohamed_Adel_CV_Web.pdf" download><button>Download CV</button></a>
             </div>
-            <div class="icons">
-                <a href="https://www.linkedin.com/in/mohamed-adel-063667213/"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://github.com/Mohamed-Adel-Abdelhamed"><i class="fa-brands fa-github"></i></a>
-                <a href="https://www.facebook.com/mohamed.a.messi.94"><i class="fa-brands fa-facebook"></i></a>
+            <div class="inputs">
+                <form name="submit-to-google-sheet">
+                    <input type="name" name="Name" placeholder="Enter Your Name" required><br>
+                    <input type="email" name="E-mail" placeholder="Enter Your Email" required><br>
+                    <input type="text" name="Subject" placeholder="Enter Your Subject"><br>
+                    <textarea name="Message" id="" cols="30" rows="10" placeholder="Enter Your Message"></textarea>
+                    <button type="submit">Sumbit</button>
+                </form>
+                <span id="msg"></span>
             </div>
-            <a href="Mohamed_Adel_CV_Web.pdf" download><button>Download CV</button></a>
-        </div>
-        <div class="inputs">
-            <form name="submit-to-google-sheet">
-                <input type="name" name="Name" placeholder="Enter Your Name" required><br>
-                <input type="email" name="E-mail" placeholder="Enter Your Email" required><br>
-                <input type="text" name="Subject" placeholder="Enter Your Subject"><br>
-                <textarea name="Message" id="" cols="30" rows="10" placeholder="Enter Your Message"></textarea>
-                <button type="submit">Sumbit</button>
-            </form>
-            <span id="msg"></span>
         </div>
     </section>
     <!--FOOTER SECTION-->

@@ -118,7 +118,6 @@ button:hover{
     align-items: flex-start;
     justify-content: flex-start;
     background-color: #E3E6F3;
-    /*height: 50vh;*/
     width: 300px;
     position: fixed;
     top: 0;
@@ -149,11 +148,13 @@ button:hover{
   }
   
   #mobile i {
+    cursor: pointer;
     color: white;
     font-size: 24px;
   }
   
   #close{
+    cursor: pointer;
     display: initial;
     position: absolute;
     top:30px;

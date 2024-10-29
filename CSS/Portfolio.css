@@ -12,11 +12,11 @@ html {
 
 /*GENARAL STYLES*/
 :root{
- --header-color: #02202a;
- --section-color:#043d51;
- --button-color:#19c8fa;
- --background-color: #010d12;
- --hover-color: rgb(184, 183, 183);
+  --header-color: #02202a;
+  --section-color:#043d51;
+  --button-color:#19c8fa;
+  --background-color: #010d12;
+  --hover-color: rgb(184, 183, 183);
 }
 .section-p1 {
   padding: 40px 80px;
@@ -65,44 +65,118 @@ button:hover{
   margin-left: 100px;
 }
 
-#header .navbar ul{
+#navbar{
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  width: 200px;
+  justify-content: center;
+  margin-right: 30px;
+}
+
+#navbar li{
   list-style: none;
-  width: 100%;
-  padding-right: 80px;
+  padding: 0 10px;
+  position: relative;
 }
 
-#header .navbar ul li{
-  padding-right: 25px;
-}
-
-#header .navbar ul li a{
+#navbar li a{
   text-decoration: none;
   color: white;
   font-size: 14px;
   font-weight: 600;
-  transition: 0.4s;
+  transition: 0.5s;
 }
 
-#header .navbar ul li a:hover,
-#header .navbar ul li a.active{
-  color: var(--button-color);
+#navbar li a:hover,
+#navbar li a.active{
+  color:var(--button-color) ;
+  
+}
+
+#navbar li a:hover::after,
+#navbar li a.active::after{
+  content: "";
+  width: 70%;
+  height: 2px;
+  background-color: #088178 ;
+  position: absolute;
+  left: 10px;
+  bottom: -4px;
+}
+
+#mobile{
+  display: none;
+}
+
+#close{
+  display: none;
+}
+
+@media(max-width: 800px){
+  #navbar{
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-color: #E3E6F3;
+    /*height: 50vh;*/
+    width: 300px;
+    position: fixed;
+    top: 0;
+    margin: 0;;
+    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+    padding: 80px 0 0 10px;
+    transition: 0.4s;
+  }
+  
+  #navbar.active{
+    display: block;
+    right: 0px;
+  }
+  
+  #navbar li{
+    margin-bottom: 25px;
+    width: 25%;
+  }
+  
+  #navbar li a{
+    color: var(--background-color);
+  }
+
+  #mobile{
+    display: flex;
+    align-items: center;
+    margin: auto 50px;
+  }
+  
+  #mobile i {
+    color: white;
+    font-size: 24px;
+  }
+  
+  #close{
+    display: initial;
+    position: absolute;
+    top:30px;
+    left: 30px;
+    color: var(--background-color);
+    font-size: 24px;
+  }
 }
 
 /*END HEADER SECTION*/
 
-/*original SECTION*/
+/*START ORIGINAL SECTION (HOME & ABOUT)*/
+
+#home, #about, #contact{
+  width: 100%;
+  background-color: var(--background-color);
+}
 
 .original{
   display: flex;
   justify-content: space-between;
-  background-color: var(--background-color);
-  width: 100%;
-  height: 100vh;
   align-items: center;
+  margin-top: 90px;
 }
 
 .original .description{
@@ -160,6 +234,23 @@ button:hover{
   border-radius: 50%;
   border: 5px solid rgb(15, 15, 15);
 }
+/*MEDIA QUERY */
+@media(max-width: 860px){
+  .section-p1{
+    padding: 40px 40px;
+  }
+  .original{
+    display: flex;
+    flex-direction: column;
+  }
+  .original .description, .original .picture img{
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+
+
+/*END ORIGINAL SECTION (HOME & ABOUT)*/
 
 /*MY SERVICES SECTION*/
 #services{
@@ -213,6 +304,31 @@ button:hover{
   padding-bottom: 15px;
   line-height: 1.5;
 }
+/* MEDIA QUERY */
+@media(max-width: 800px){
+  #services .services-containter{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #services .service{
+    width: 45%;
+    margin: 20px 0;
+  }
+}
+
+@media(max-width: 700px){
+  #services .services-containter{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  #services .service{
+    width: 100%;
+    margin: 20px 0;
+  }
+}
+
+/*END SERVICES SECTION*/
 
 /*START SKILLS SECTION*/
 #skills{
@@ -292,6 +408,21 @@ button:hover{
   right:-18px;
 }
 
+/* MEDIA QUERY */
+@media(max-width: 700px){
+  #skills{
+    text-align: center;
+  }
+  #skills .skills-container{
+    display: flex;
+    flex-direction: column;
+    padding: 0 60px;
+  }
+  #skills .skills-box{
+    width: 100%;
+    margin: 20px auto;
+  }
+}
 
 /*END SKILLS SECTION*/
 
@@ -340,6 +471,32 @@ button:hover{
   height: 100%;
   border-radius: 15px;
 }
+
+/* MEDIA QUERY */
+@media(max-width: 800px){
+  #projects .services-containter{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #projects .service{
+    width: 45%;
+    margin: 20px 0;
+  }
+}
+
+@media(max-width: 700px){
+  #projects .services-containter{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  #projects .service{
+    width: 100%;
+    margin: 20px 0;
+  }
+}
+
+
 /*END PROJECTS SECTION*/
 
 
@@ -442,6 +599,19 @@ button:hover{
   font-size: 14px;
   display: block;
 }
+@media(max-width: 860px){
+  .section-p1{
+    padding: 40px 40px;
+  }
+  .original{
+    display: flex;
+    flex-direction: column;
+  }
+  #contact .info, #contact .inputs{
+    width: 100%;
+    margin: 10px 0;
+  }
+}
 /*END CONTACT SECTION*/
 
 
@@ -460,3 +630,8 @@ footer{
 }
 
 /*END FOOTER SECTION*/
+
+
+/*START MEDIA QUERY*/
+
+/*END MEDIA QUERY*/

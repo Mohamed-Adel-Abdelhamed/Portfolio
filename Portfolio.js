@@ -10,6 +10,28 @@ links.forEach((link) => {
 })
 
 
+//NAVBAR IN MOBILE SCREEN
+const bar = document.getElementById('bar')
+const navbar = document.getElementById('navbar')
+const close = document.getElementById('close')
+
+
+if (bar){
+    bar.addEventListener('click', (e) => {
+        e.stopPropagation
+        navbar.classList.add('active');
+        bar.style.display = "none";
+    })
+}
+
+if(close){
+    close.addEventListener('click', () => {
+        navbar.classList.remove('active');
+        bar.style.display = "block";
+    })
+}
+
+
 
 //SKILLS DATA-PROGRESS ANIMATION
 let our_skills = document.querySelector(".skills-container");
@@ -25,6 +47,8 @@ window.onscroll = function() {
         });
     }
 }
+
+
 
 
 
